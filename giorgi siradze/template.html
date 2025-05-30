@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Grid with Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>User Grid</h1>
+      </div>
+
+      <div id="error-container" class="error-container" style="display: none">
+        <h3 class="error-title">Error Loading Users</h3>
+        <p id="error-message" class="error-message">
+          An error occurred while fetching users.
+        </p>
+      </div>
+
+      <div class="search-container">
+        <div class="search-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+        <input type="text" class="search-input" placeholder="Search users..." />
+      </div>
+
+      <!-- LOADER -->
+      <div id="loader" class="loader">
+        <div class="spinner"></div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar">LG</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Leanne Graham</h3>
+            <p class="card-username">@Bret</p>
+
+            <div class="card-details">
+              <p class="card-details-title">Address</p>
+              <p class="card-address">
+                Kulas Light, Apt. 556<br />
+                Gwenborough
+              </p>
+            </div>
+
+            <div class="card-details">
+              <p class="card-details-title">Company</p>
+              <p class="card-company">Romaguera-Crona</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar">JD</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">John Doe</h3>
+            <p class="card-username">@johndoe</p>
+
+            <div class="card-details">
+              <p class="card-details-title">Address</p>
+              <p class="card-address">
+                Victor Plains, Suite 879<br />
+                Wisokyburgh
+              </p>
+            </div>
+
+            <div class="card-details">
+              <p class="card-details-title">Company</p>
+              <p class="card-company">Deckow-Crist</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar">CC</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Clementine Bauch</h3>
+            <p class="card-username">@Samantha</p>
+
+            <div class="card-details">
+              <p class="card-details-title">Address</p>
+              <p class="card-address">
+                Douglas Extension, Suite 847<br />
+                McKenziehaven
+              </p>
+            </div>
+
+            <div class="card-details">
+              <p class="card-details-title">Company</p>
+              <p class="card-company">Romaguera-Jacobson</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar">PL</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Patricia Lebsack</h3>
+            <p class="card-username">@Karianne</p>
+
+            <div class="card-details">
+              <p class="card-details-title">Address</p>
+              <p class="card-address">
+                Hoeger Mall, Apt. 692<br />
+                South Elvis
+              </p>
+            </div>
+
+            <div class="card-details">
+              <p class="card-details-title">Company</p>
+              <p class="card-company">Robel-Corkery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
